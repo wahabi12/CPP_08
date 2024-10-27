@@ -1,6 +1,7 @@
+
+NAME = mutantstack_test
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = mutantstack_test
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
@@ -8,7 +9,10 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+
+%.o: %.cpp MutantStack.hpp MutantStack.tpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
@@ -17,3 +21,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re

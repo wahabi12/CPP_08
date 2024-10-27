@@ -6,16 +6,11 @@
 /*   By: blatifat <blatifat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 22:18:57 by blatifat          #+#    #+#             */
-/*   Updated: 2024/10/17 04:55:41 by blatifat         ###   ########.fr       */
+/*   Updated: 2024/10/27 21:46:23 by blatifat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
-
-#include "Span.hpp"
-#include <algorithm>
-#include <stdexcept>
-#include <limits>
 
 Span::Span(unsigned int N) : _maxSize(N) {}
 

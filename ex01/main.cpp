@@ -6,16 +6,15 @@
 /*   By: blatifat <blatifat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 22:18:01 by blatifat          #+#    #+#             */
-/*   Updated: 2024/10/17 04:55:11 by blatifat         ###   ########.fr       */
+/*   Updated: 2024/10/27 23:11:47 by blatifat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Span.hpp"
-#include <vector>
 
 int main() {
 	try {
-		Span sp = Span(5);
+		Span sp = Span(10);
 
 		sp.addNumber(6);
 		sp.addNumber(3);

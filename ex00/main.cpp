@@ -6,14 +6,13 @@
 /*   By: blatifat <blatifat@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 22:12:31 by blatifat          #+#    #+#             */
-/*   Updated: 2024/10/17 04:54:35 by blatifat         ###   ########.fr       */
+/*   Updated: 2024/10/27 22:29:10 by blatifat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "easyfind.hpp"
 
 int main() {
-	// Test avec un std::vector
 	std::vector<int> vec;
 	for (int i = 0; i < 10; i++) {
 		vec.push_back(i);
@@ -34,7 +33,6 @@ int main() {
 		std::cerr << e.what() << std::endl;
 	}
 
-	// Test avec un std::list
 	std::list<int> lst;
 	for (int i = 0; i < 10; i++) {
 		lst.push_back(i * 2);
